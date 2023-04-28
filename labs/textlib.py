@@ -1,5 +1,7 @@
 class BodyOfText:
     def __init__(self, text):
+        if text == "":
+            raise ValueError
         self.text = text
     def num_paragraphs(self):
         return -1
