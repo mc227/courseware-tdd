@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(1, "C:/Users/Mark Costales/Desktop/dev/courseware-tdd/labs")
 import unittest
 from greeting import greet
 
