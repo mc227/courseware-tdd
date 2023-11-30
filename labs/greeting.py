@@ -5,6 +5,6 @@ def greet(name):
     """
     insert function docstring
     """
-    return ""
+    return "Hi " + name
 
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
