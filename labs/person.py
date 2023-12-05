@@ -17,4 +17,10 @@ class Person:
         doc string
         """
         return self.first + " " + self.last
+
+    def formal_name(self, honorific):
+        """
+        formal_name
+        """
+        return honorific + " " + self.full_name()
         

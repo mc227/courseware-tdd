@@ -16,5 +16,4 @@ class TestPerson(unittest.TestCase):
         self.assertEqual("John",guy.first)
         self.assertEqual("Doe",guy.last)
         self.assertEqual(guy.full_name(), "John Doe")
-        
-
+        self.assertEqual(guy.formal_name("Mr."), "Mr. John Doe")
