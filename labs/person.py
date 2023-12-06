@@ -18,9 +18,9 @@ class Person:
         """
         return self.first + " " + self.last
 
-    def formal_name(self, honorific):
+    def formal_name(self, title):
         """
         formal_name
         """
-        return honorific + " " + self.full_name()
+        return title + " " + self.full_name()
         
