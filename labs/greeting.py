@@ -27,7 +27,7 @@ def display_gif(gif_path):
 
     root.mainloop()
 
-def greet(name):
+def greet(name="Mark"):
     """
     insert function docstring
     """
@@ -35,7 +35,7 @@ def greet(name):
 
 def main():
     """function or method docstring"""
-    print(greet("Mark"))
+    print(greet())
 
     # Add GIF display functionality
     gif_path = "OhHiMark.gif"  # Replace with the path to your GIF
