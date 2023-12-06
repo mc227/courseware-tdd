@@ -12,7 +12,6 @@ class TestGreeting(unittest.TestCase):
         """
         insert function docstring
         """
-        # assert "Hi John" == greet("John")
         self.assertEqual("Hi, John",greet("John"))
 
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
