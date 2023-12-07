@@ -1,7 +1,7 @@
 """
-hello_world.py - A simple Python module for printing 'Hello, World!'
+hello_world.py - A simple Python module for returning 'Hello, World!'
 
-This module contains a single function, `hello_world()`, that prints the
+This module contains a single function, `hello_world()`, that returns the
 classic 'Hello, World!' message to the console.
 
 Usage:
@@ -10,14 +10,13 @@ Usage:
 """
 def hello_world():
     """
-    Print 'Hello, World!' to the console.
+    Return 'Hello, World!'.
 
-    This function prints the well-known greeting message 'Hello, World!' to
-    the standard output.
+    This function returns the well-known greeting message 'Hello, World!'.
 
     Example:
-        hello_world()
+        result = hello_world()
+        print(result)
         # Output: Hello, World!
     """
     return "Hello, World!"
-    
