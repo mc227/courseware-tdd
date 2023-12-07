@@ -14,15 +14,18 @@ class TestBodyOfText(unittest.TestCase):
         """function or method docstring"""
         body_of_text = BodyOfText("")
         self.assertEqual(body_of_text.num_paragraphs(), 0)
+        self.assertEqual(body_of_text.paragraphs(), [])
 
     def test_single_paragraph(self):
         """function docstring"""
         body_of_text = BodyOfText("""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in est. Eu lobortis elementum nibh tellus molestie. Urna neque viverra justo nec ultrices. Cum sociis natoque penatibus et magnis dis. Maecenas sed enim ut sem viverra aliquet. Pulvinar pellentesque habitant morbi tristique senectus et. Posuere ac ut consequat semper viverra nam. Eros in cursus turpis massa tincidunt dui ut. Egestas pretium aenean pharetra magna ac placerat. Proin sed libero enim sed. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Et odio pellentesque diam volutpat commodo sed. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse.""")
         self.assertEqual(body_of_text.num_paragraphs(),1)
+        self.assertEqual(body_of_text.paragraphs(), [])
 
     def test_several_paragraphs(self):
         """function docstring"""
         body_of_text = BodyOfText(test_string)
         self.assertEqual(body_of_text.num_paragraphs(), 3)
+        self.assertEqual(body_of_text.paragraphs(), [])
 
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
