@@ -16,6 +16,3 @@ class BodyOfText:
     def paragraphs(self):
         """Stub method to return an empty list"""
         return [paragraph.strip() for paragraph in self.text.split("\n\n")]
-
-if __name__ == "__main__":
-    bodyOfText = BodyOfText("""""")
