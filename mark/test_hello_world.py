@@ -19,8 +19,7 @@ class TestHelloWorld(unittest.TestCase):
     function to ensure it produces the expected output.
 
     Methods:
-        - test_hello_world: Test if hello_world() prints 'Hello, World!'
-          to the console.
+        - test_hello_world: Test if hello_world() returns 'Hello, World!'.
     """
     def test_hello_world(self):
         """
