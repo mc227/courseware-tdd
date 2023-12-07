@@ -25,14 +25,11 @@ class TestHelloWorld(unittest.TestCase):
         """
         Test the hello_world function.
 
-        This test checks whether the hello_world() function prints the
-        expected 'Hello, World!' message to the console.
+        This test checks whether the hello_world() function returns the
+        expected 'Hello, World!' message.
 
         Steps:
-            1. Redirect stdout to capture the print output.
-            2. Call the hello_world() function.
-            3. Get the printed output.
-            4. Reset stdout redirection.
-            5. Assert the output is as expected.
+            1. Call the hello_world() function.
+            2. Assert the output is as expected.
         """
         self.assertEqual("Hello, World!", hello_world())
