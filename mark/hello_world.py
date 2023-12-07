@@ -10,6 +10,13 @@ Usage:
 """
 def hello_world():
     """
-    Simple program printing out hello world
+    Print 'Hello, World!' to the console.
+
+    This function prints the well-known greeting message 'Hello, World!' to
+    the standard output.
+
+    Example:
+        hello_world()
+        # Output: Hello, World!
     """
     
