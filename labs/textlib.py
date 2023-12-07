@@ -5,19 +5,12 @@ class BodyOfText:
         self.text = text
 
     def num_paragraphs(self):
-        """function or method docstring"""
-        if self.text == "":
-            return 0
-        elif self.text.count("\n\n") == 0:
-            return 1
-        else:
-            return self.text.count("\n\n") + 1
+        """Return the number of paragraphs"""
+        return max(1, len(self.text.split("\n\n")))
 
     def paragraphs(self):
-        """Stub method to return an empty list"""
+        """Return a list of paragraphs"""
         return [paragraph.strip() for paragraph in self.text.split("\n\n") if paragraph.strip()]
-
-# Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
 
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
 
