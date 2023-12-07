@@ -6,7 +6,9 @@ classic 'Hello, World!' message to the console.
 
 Usage:
     import hello_world
-    hello_world.hello_world()
+    result = hello_world.hello_world()
+    print(result)
+    # Output: Hello, World!
 """
 def hello_world():
     """
@@ -20,3 +22,6 @@ def hello_world():
         # Output: Hello, World!
     """
     return "Hello, World!"
+
+# if __name__ == "__main__":
+#     print(hello_world())
