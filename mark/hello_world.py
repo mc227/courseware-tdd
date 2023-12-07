@@ -19,4 +19,5 @@ def hello_world():
         hello_world()
         # Output: Hello, World!
     """
+    return "Hello, World!"
     
