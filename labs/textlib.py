@@ -24,3 +24,4 @@ class BodyOfText:
         occurrences. 
         Case and punctuation are ignored
         """
+        return {}

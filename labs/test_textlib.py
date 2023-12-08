@@ -28,4 +28,18 @@ class TestBodyOfText(unittest.TestCase):
         self.assertEqual(body_of_text.num_paragraphs(), 3)
         self.assertEqual(body_of_text.paragraphs(),['Lorem ipsum dolor sit amet.','Egestas diam in arcu cursus euismod.','Mattis pellentesque id nibh tortor id aliquet lectus proin nibh.'])
 
+    def test_wordcounts(self):
+        """test_wordcounts"""
+        testitems = [
+            {'text' : 'This is a sentence.',
+             'counts' : {'this': 1, 'is': 1, 'a': 1, 'sentence': 1},
+            },
+            {'text': 'Truth is beauty; beauty, truth.',
+             'counts': {'truth': 2, 'beauty': 2, 'is': 1},
+             },
+            {'text': 'I could finally SEE. But what I could see, remained a mystery.',
+             'counts': {'i': 2, 'could': 2, 'finally': 1, 'see': 2,
+                        'but': 1, 'what': 1, 'remained': 1, 'a': 1, 'mystery': 1},
+             },]
+        
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
