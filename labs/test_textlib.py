@@ -41,5 +41,6 @@ class TestBodyOfText(unittest.TestCase):
              'counts': {'i': 2, 'could': 2, 'finally': 1, 'see': 2,
                         'but': 1, 'what': 1, 'remained': 1, 'a': 1, 'mystery': 1},
              },]
-        
+        for item in testitems:
+            self.subTest(item )
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
