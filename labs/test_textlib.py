@@ -42,5 +42,6 @@ class TestBodyOfText(unittest.TestCase):
                         'but': 1, 'what': 1, 'remained': 1, 'a': 1, 'mystery': 1},
              },]
         for item in testitems:
-            self.subTest(item )
+            with self.subTest(item['text']):
+                self.assertEqual(item['counts'],BodyOfText.wordcounts(item['text']))
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
