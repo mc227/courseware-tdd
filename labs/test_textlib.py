@@ -26,7 +26,10 @@ class TestBodyOfText(unittest.TestCase):
         """test_several_paragraphs"""
         body_of_text = BodyOfText(TESTSTRING)
         self.assertEqual(body_of_text.num_paragraphs(), 3)
-        self.assertEqual(body_of_text.paragraphs(),['Lorem ipsum dolor sit amet.','Egestas diam in arcu cursus euismod.','Mattis pellentesque id nibh tortor id aliquet lectus proin nibh.'])
+        self.assertEqual(body_of_text.paragraphs(),
+        ['Lorem ipsum dolor sit amet.',
+        'Egestas diam in arcu cursus euismod.',
+        'Mattis pellentesque id nibh tortor id aliquet lectus proin nibh.'])
 
     def test_wordcounts(self):
         """test_wordcounts"""
@@ -43,5 +46,5 @@ class TestBodyOfText(unittest.TestCase):
              },]
         for item in testitems:
             with self.subTest(item['text']):
-                self.assertEqual(item['counts'],BodyOfText.wordcounts(item['text']))
+                self.assertEqual(item['counts'], BodyOfText(item['text']).wordcounts())
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
