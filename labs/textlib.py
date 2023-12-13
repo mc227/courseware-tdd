@@ -4,6 +4,8 @@ import re
 class BodyOfText:
     """class docstring"""
     def __init__(self, text):
+        if text == "":
+            raise ValueError("BodyOfText input cannot be blank")
         self.text = text
 
     def num_paragraphs(self):
@@ -37,5 +39,4 @@ class BodyOfText:
         return word_counts
 
 if __name__ == "__main__":
-    body = BodyOfText("This is a sentence.")
-    print(body.wordcounts())
+    body = BodyOfText("")
