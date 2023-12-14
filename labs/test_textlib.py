@@ -1,6 +1,6 @@
 """test_textlib.py"""
 import unittest
-from textlib import BodyOfText
+from textlib import BodyOfText, Paragraph
 
 TESTSTRING = """Lorem ipsum dolor sit amet.
 
@@ -12,9 +12,11 @@ class TestBodyOfText(unittest.TestCase):
     """class docstring"""
     def test_empty_story(self):
         """test_empty_story"""
-        body_of_text = BodyOfText("")
-        self.assertEqual(body_of_text.num_paragraphs(), 0)
-        self.assertEqual(body_of_text.paragraphs(), [''])
+        # body_of_text = BodyOfText("")
+        # self.assertEqual(body_of_text.num_paragraphs(), 0)
+        # self.assertEqual(body_of_text.paragraphs(), [''])
+        with self.assertRaises(ValueError):
+            BodyOfText("")
 
     def test_single_paragraph(self):
         """test_single_paragraph"""
@@ -47,4 +49,25 @@ class TestBodyOfText(unittest.TestCase):
         for item in testitems:
             with self.subTest(item['text']):
                 self.assertEqual(item['counts'], BodyOfText(item['text']).wordcounts())
+
+class TestParagraph(unittest.TestCase):
+    """
+    docstring
+    """
+    def test_empty_paragraph(self):
+        """docstring"""
+        para = Paragraph("")
+        self.assertEqual(para.num_sentences(),0)
+
+    def test_single_sentence(self):
+        """docstring"""
+        para = Paragraph("This is a single ready to mingle sentence.")
+        self.assertEqual(para.num_sentences(),1)
+
+    def test_several_sentences(self):
+        """docstring"""
+        para = Paragraph("This is a single ready to mingle sentence. This is sentence number 2. This is sentence number 3.")
+        self.assertEqual(para.num_sentences(),3)
+
+
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.

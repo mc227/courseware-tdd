@@ -38,5 +38,23 @@ class BodyOfText:
 
         return word_counts
 
+class Paragraph:
+    """
+    docstring
+    """
+    def __init__(self,text):
+        """
+        docstring
+        """
+        self.text = text
+    def num_sentences(self):
+        """
+        docstring
+        """
+        if self.text == "":
+            return 0
+        return self.text.count(".")
+
 if __name__ == "__main__":
-    body = BodyOfText("")
+    # body = BodyOfText("")
+    print("hello world")
