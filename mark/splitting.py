@@ -15,5 +15,5 @@ def split_amount(amount,n):
             remain -= 1
     return portions
 
-if __name__ == "__main__":
-    print(split_amount(5,3))
+# if __name__ == "__main__":
+#     print(split_amount(5,3))

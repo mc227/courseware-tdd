@@ -7,5 +7,6 @@ def greet(name):
     """
     return "Hi, " + name
     # pass
+    # return ""
 
 # Part of Powerful Python Academy. Copyright MigrateUp LLC. All rights reserved.
